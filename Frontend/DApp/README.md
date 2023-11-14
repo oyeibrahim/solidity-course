@@ -3,4 +3,4 @@
 This project contains the starter files for [Hello World Part 4 tutorial](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/creating-a-full-stack-dapp), in which we teach you how to create a full stack dApp by connecting your Hello World smart contract to a React frontend using Metamask and Web3 tools.
 
 
-Working online version available here [Solidity Course DApp on Bitwalka](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/creating-a-full-stack-dapp)
+Working online version available here [Solidity Course DApp on Bitwalka](https://solidity-course-dapp.bitwalka.com/)
