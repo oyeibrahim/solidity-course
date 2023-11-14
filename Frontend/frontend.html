@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Bank Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Frontend Bank Dashboard</h2>
+
+        <hr>
+
+        <!-- Wallet Connection -->
+        <div class="row mb-3">
+            <div class="col">
+                <button id="connectWalletButton" class="btn btn-primary">Connect Metamask Wallet</button>
+                &nbsp;
+                <button id="connectWalletButton" class="btn btn-primary">Connect WalletConnect Wallet</button>
+                <button id="logoutButton" class="btn btn-secondary">Logout</button>
+            </div>
+            <div class="col">
+                <span id="connectedAccount" class="text-success">Connected: 0x32543726567263536373</span>
+                <img id="walletImage" src="" alt="" style="height: 30px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Status and Error Messages -->
+        <div id="messageBox" class="alert"> Status Messages here</div>
+
+        <hr>
+
+        <!-- Balance Displays -->
+        <div class="row mb-3">
+            <div class="col">
+                <label>Eth Balance:</label>
+                <p id="ethBalance">0 ETH</p>
+            </div>
+            <div class="col">
+                <label>Token Balance:</label>
+                <p id="tokenBalance">0 Tokens</p>
+            </div>
+            <div class="col">
+                <label>Eth Deposit Balance:</label>
+                <p id="ethDepositBalance">0 ETH</p>
+            </div>
+            <div class="col">
+                <label>Token Deposit Balance:</label>
+                <p id="tokenDepositBalance">0 Tokens</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Action Forms -->
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control mb-2" placeholder="Address">
+                <input type="number" class="form-control mb-2" placeholder="Amount in ETH">
+                <button class="btn btn-primary">Send ETH</button>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control mb-2" placeholder="Address">
+                <input type="number" class="form-control mb-2" placeholder="Amount in Tokens">
+                <button class="btn btn-primary">Send Tokens</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-3">
+            <div class="col">
+                <input type="number" class="form-control mb-2" placeholder="Amount in ETH to Deposit">
+                <button class="btn btn-primary">Deposit ETH</button>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control mb-2" placeholder="Amount in Tokens to Deposit">
+                <!-- <button class="btn btn-primary mb-3 mb-md-0">Approve Tokens For Deposit</button> -->
+                <button class="btn btn-primary">Deposit Tokens</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-3">
+            <div class="col">
+                <input type="number" class="form-control mb-2" placeholder="Amount of ETH to Withdraw">
+                <button class="btn btn-warning">Withdraw ETH</button>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control mb-2" placeholder="Amount of Tokens to Withdraw">
+                <button class="btn btn-warning">Withdraw Tokens</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control mb-2" placeholder="Address">
+                <input type="number" class="form-control mb-2" placeholder="Amount in ETH">
+                <button class="btn btn-secondary">Credit ETH Balance</button>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control mb-2" placeholder="Address">
+                <input type="number" class="form-control mb-2" placeholder="Amount in Tokens">
+                <button class="btn btn-secondary">Credit Token Balance</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
